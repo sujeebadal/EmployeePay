@@ -23,14 +23,23 @@ public class EmployeePay {
         else if (Hours_Worked > 60) {
             System.out.println("Hours Worked Out of Range");
             System.exit(0);
-        } else if (Hours_Worked >= 36 && Hours_Worked <= 60) {
+
+        }
+        else if (Hours_Worked >= 36 && Hours_Worked <= 60) {
             int Overtime_Hours = Hours_Worked - 35;
             double Overtime_Pay = (Overtime_Hours) * (Pay_Rate * 1.5);
             double Weekly_Pay = (Overtime_Pay) + (35 * Pay_Rate);
-            System.out.println("Employee_Number" + Employee_Number + "Pay_Rate" + Pay_Rate + "Hours_Worked" + Hours_Worked + "Weekly_Pay" + Weekly_Pay);
-        } else if (Hours_Worked <= 35) {
+            System.out.println("Employee_Number" + Employee_Number);
+            System.out.println("Pay_Rate" + Pay_Rate);
+            System.out.println("Hours_Worked" + Hours_Worked);
+            System.out.println("Weekly_Pay" + Weekly_Pay);
+        }
+        else if (Hours_Worked <= 35) {
             double Weekly_Pay = (Hours_Worked) * (Pay_Rate);
-            System.out.println("Employee_Number" + Employee_Number + "Pay_Rate" + Pay_Rate + "Hours_Worked" + Hours_Worked + "Weekly_Pay" + Weekly_Pay);
+            System.out.println("Employee_Number" + Employee_Number);
+            System.out.println("Pay_Rate" + Pay_Rate);
+            System.out.println("Hours_Worked" + Hours_Worked);
+            System.out.println("Weekly_Pay" + Weekly_Pay);
         }
     }
 }
